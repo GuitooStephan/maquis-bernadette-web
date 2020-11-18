@@ -1,0 +1,284 @@
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/proxima_nova/ProximaNova-Regular.otf') 
+        format('opentype');
+}
+
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../fonts/proxima_nova/Proxima\ Nova\ Bold.otf') 
+		format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'ProximaNovaThin';
+	src: url('../fonts/proxima_nova/Proxima\ Nova\ Thin.otf') 
+		format('opentype');
+	font-weight: thin;
+}
+
+body{
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    color: #2e282a;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+:focus, button:focus {
+    outline: none;
+}
+
+hr {
+    border-top: 3px solid rgba(0,0,0,.1);
+}
+
+.h-70-vh {
+    height: 70vh;
+}
+
+.h-100-vh {
+    height: 100vh;
+}
+
+.min-h-100-vh {
+    min-height: 100vh;
+}
+
+.min-h-75-vh {
+    min-height: 75vh;
+}
+
+.min-h-50-vh {
+    min-height: 50vh;
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+.single-line {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.top-auto {
+    top: auto;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.br-declaration {
+    border-radius: 8px;
+}
+
+.p-6 {
+    padding: 6rem;
+}
+
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.pt-6 {
+    padding-top: 6rem;
+}
+
+.pb-6 {
+    padding-bottom: 6rem;
+}
+
+.pl-6 {
+    padding-left: 6rem;
+}
+
+.p-7 {
+    padding: 12rem;
+}
+
+.pr-7 {
+    padding-right: 12rem;
+}
+
+.lh-high {
+    line-height: 1.7;
+}
+
+.small {
+    font-weight: 500;
+}
+
+.img-fit {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-icon {
+    height: 1rem;
+    width: auto;
+}
+
+.divider {
+    border: 1px solid #fff;
+    margin: 0;
+}
+
+.bg-deep-secondary {
+    background-color: #dfe6eb;
+}
+
+/* Buttons */
+.btn-transparent {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+/* Links */
+a:hover {
+    text-decoration: none;
+}
+
+.is-a {
+    cursor: pointer !important;
+}
+
+/* Hero */
+.hero {
+    background-color: #fff;
+}
+
+.logo {
+    width: 80%;
+}
+
+/* Forms */
+.form-label-group textarea:not(:placeholder-shown) ~ label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    top: -10%;
+}
+
+.form-control {
+    font-weight: 400;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.form-control::-webkit-input-placeholder{color:#fff;opacity:.5}
+.form-control::-moz-placeholder{color:#fff;opacity:.5}
+.form-control:-ms-input-placeholder{color:#fff;opacity:.5}
+.form-control::-ms-input-placeholder{color:#fff;opacity:.5}
+.form-control::placeholder{color:#fff;opacity:.5}
+
+@-webkit-keyframes autofilllight {
+    0%,100% {
+        background: transparent;
+        color: #495057;
+        font-weight: 400;
+    }
+}
+
+input.form-control:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofilllight;
+    -webkit-animation-fill-mode: both;
+}
+
+/* Media queries */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .position-lg-absolute {
+        position: absolute !important;
+    }
+
+    .w-lg-100 {
+        width: 100% !important;
+    }
+
+    .w-lg-50 {
+        width: 50% !important;
+    }
+
+    .logo {
+        width: 30% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .p-sm-6 {
+        padding: 6rem !important;
+    }
+
+    .multiple-line-sm {
+        overflow: auto;
+        white-space: normal;
+    }
+
+    .logo {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .p-md-6 {
+        padding: 6rem !important;
+    }
+
+    .w-md-75 {
+        width: 75%;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .px-md-6 {
+        padding-right: 6rem !important;
+        padding-left: 6rem !important;
+    }
+
+    .multiple-line-md {
+        overflow: auto;
+        white-space: normal;
+    }
+
+    .single-line-md {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (min-width: 1200px) {
+    .p-lg-6 {
+        padding: 6rem !important;
+    }
+}
